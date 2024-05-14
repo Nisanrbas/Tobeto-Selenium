@@ -1,8 +1,6 @@
 
 
-@pytest.mark.parametrize('isim', ['Claire', 'Gloria', 'Haley']) def test_female_prefix_v2(name): 'Bayan' iddiası == get_gender_heading(isim)
 
-Böylece, pytest birden çok kez arayacaktır test_female_prefix_v2: önce ile name='Claire', sonra ile name='Gloria'vb. Bu, özellikle aynı anda birden çok bağımsız değişken kullanıldığında kullanışlıdır:
 
 @pytest.mark.parametrize( 'isim, bekleniyor', [('Claire', 'Mrs'), ('Jay', 'Mr')] ) def test_both_sex_v2(isim, bekleniyor): iddia bekleniyor == get_gender_heading(name )
 
